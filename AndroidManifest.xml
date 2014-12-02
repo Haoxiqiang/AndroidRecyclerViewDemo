@@ -22,7 +22,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="info.hxq.androidrecyclerviewdemo.RecyclerViewVerticalList" />
+        <activity android:name="info.hxq.androidrecyclerviewdemo.RecyclerViewList" />
+        <activity android:name="info.hxq.androidrecyclerviewdemo.RecyclerViewGrid" />
+        <activity android:name="info.hxq.androidrecyclerviewdemo.RecyclerViewAnimationGrid" />
     </application>
 
 </manifest>

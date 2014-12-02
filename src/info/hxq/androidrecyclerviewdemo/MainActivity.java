@@ -18,8 +18,10 @@ public class MainActivity extends ActionBarActivity implements OnItemViewHolderC
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter<RecyclerAdapter.ViewHolder> mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
-    private static final Class[] TARGET = {RecyclerViewVerticalList.class};
-    private static final String[] TARGETSTRING = {"RecyclerViewVerticalList"};
+    private static final Class[] TARGET = {RecyclerViewList.class, RecyclerViewGrid.class,
+            RecyclerViewAnimationGrid.class};
+    private static final String[] TARGETSTRING = {"RecyclerViewList", "RecyclerViewGrid",
+            "RecyclerViewAnimationGrid"};
     private final ArrayList<String> dataSet = new ArrayList<String>();
 
     @Override

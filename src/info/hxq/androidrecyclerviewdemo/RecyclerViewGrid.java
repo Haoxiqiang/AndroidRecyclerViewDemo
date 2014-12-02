@@ -8,17 +8,17 @@ import java.util.Random;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class RecyclerViewVerticalList extends ActionBarActivity {
+public class RecyclerViewGrid extends ActionBarActivity {
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter<RecyclerAdapter.ViewHolder> mAdapter;
-    private RecyclerView.LayoutManager mLayoutManager;
+    private GridLayoutManager mLayoutManager;
     private static final String[] LETTERS = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K",
             "L", "M", "N"};
     private final ArrayList<String> dataSet = new ArrayList<String>();
@@ -31,8 +31,11 @@ public class RecyclerViewVerticalList extends ActionBarActivity {
 
         mRecyclerView.setHasFixedSize(true);
 
-        mLayoutManager = new LinearLayoutManager(this);
+        mLayoutManager = new GridLayoutManager(this, 2, GridLayoutManager.VERTICAL, false);
+        mLayoutManager.setSpanCount(3);
+        mLayoutManager.setSmoothScrollbarEnabled(true);
         mRecyclerView.setLayoutManager(mLayoutManager);
+
         dataSet.addAll(Arrays.asList(LETTERS));
 
         mAdapter = new RecyclerAdapter(dataSet);
