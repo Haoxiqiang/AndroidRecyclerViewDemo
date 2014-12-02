@@ -1634,6 +1634,7 @@ containing a value of this type.
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020031;
         public static final int abc_textfield_search_material=0x7f020032;
         public static final int ic_launcher=0x7f020033;
+        public static final int parallax_bg=0x7f020034;
     }
     public static final class id {
         public static final int action_bar=0x7f090033;
@@ -1649,7 +1650,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f090030;
         public static final int action_mode_bar_stub=0x7f09002f;
         public static final int action_mode_close_button=0x7f090022;
-        public static final int action_settings=0x7f090046;
+        public static final int action_settings=0x7f090047;
         public static final int activity_chooser_view_content=0x7f090023;
         public static final int add=0x7f090043;
         public static final int always=0x7f090014;
@@ -1673,7 +1674,8 @@ containing a value of this type.
         public static final int icon=0x7f090028;
         public static final int ifRoom=0x7f090016;
         public static final int image=0x7f090025;
-        public static final int item_tv=0x7f090045;
+        public static final int item_iv=0x7f090045;
+        public static final int item_tv=0x7f090046;
         public static final int listMode=0x7f09000a;
         public static final int list_item=0x7f090027;
         public static final int middle=0x7f09001d;
@@ -1758,9 +1760,11 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030015;
         public static final int abc_simple_dropdown_hint=0x7f030016;
         public static final int activity_main=0x7f030017;
-        public static final int activity_vlist=0x7f030018;
-        public static final int support_simple_spinner_dropdown_item=0x7f030019;
-        public static final int vlist_item_recycler=0x7f03001a;
+        public static final int activity_parallax=0x7f030018;
+        public static final int activity_vlist=0x7f030019;
+        public static final int parallaxview=0x7f03001a;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001b;
+        public static final int vlist_item_recycler=0x7f03001c;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
@@ -1847,7 +1851,6 @@ containing a value of this type.
          */
         public static final int AppBaseTheme=0x7f0b00eb;
         /**  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f0b00ec;
         public static final int Base_TextAppearance_AppCompat=0x7f0b0098;
@@ -1994,6 +1997,7 @@ containing a value of this type.
     
          */
         public static final int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f0b0090;
+        public static final int ParallaxTheme=0x7f0b00ed;
         public static final int Platform_AppCompat=0x7f0b00c9;
         public static final int Platform_AppCompat_Dialog=0x7f0b00cb;
         public static final int Platform_AppCompat_Light=0x7f0b00ca;

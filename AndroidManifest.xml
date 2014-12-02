@@ -25,6 +25,7 @@
         <activity android:name="info.hxq.androidrecyclerviewdemo.RecyclerViewList" />
         <activity android:name="info.hxq.androidrecyclerviewdemo.RecyclerViewGrid" />
         <activity android:name="info.hxq.androidrecyclerviewdemo.RecyclerViewAnimationGrid" />
+        <activity android:name="info.hxq.androidrecyclerviewdemo.ParallaxRecycler" android:theme="@style/ParallaxTheme"/>
     </application>
 
 </manifest>

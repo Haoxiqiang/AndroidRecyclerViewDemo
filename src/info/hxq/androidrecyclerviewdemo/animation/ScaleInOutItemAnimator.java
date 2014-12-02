@@ -112,8 +112,9 @@ public class ScaleInOutItemAnimator extends BaseItemAnimator {
     }
 
     private void retrieveOriginalScale(RecyclerView.ViewHolder holder) {
-        mOriginalScaleX = holder.itemView.getScaleX();
-        mOriginalScaleY = holder.itemView.getScaleY();
+
+        mOriginalScaleX = ViewCompat.getScaleX(holder.itemView);
+        mOriginalScaleY = ViewCompat.getScaleY(holder.itemView);
     }
 
     @Override

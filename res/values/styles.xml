@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
@@ -14,7 +14,16 @@
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
+
+    </style>
+    <style name="ParallaxTheme" parent="AppTheme">
+
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+        <item name="android:windowActionBarOverlay" tools:ignore="NewApi">true</item>
+
+        <!-- Support library compatibility -->
+        <item name="windowActionBarOverlay">true</item>
     </style>
 
 </resources>
