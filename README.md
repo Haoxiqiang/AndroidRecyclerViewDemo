@@ -25,19 +25,19 @@ RecyclerView没有类似ListView中的onItemClickListener,原因是原来的onIt
 ## LayoutManager
 
 ### LinearLayoutManagerd 默认的的效果就是一个ListView模样的,此外还有一个构造函数`LinearLayoutManager(Context context, int orientation, boolean reverseLayout)``orientation`代表了`HORIZONTAL or VERTICAL`.`reverseLayout`表示是否逆序,在一些需要排序的时候比较好用,前面的这段代码表示2行垂直布局,按照数据次序排序
-{% highlight java %}
+```
 ...
 mLayoutManager.setStackFromEnd(true);
 ...
-{% endhighlight %}
+```
 如果`setStackFromEnd(true)`,则表示显示底部的项,对于集合改变后的时候不起作用
 ### GridLayoutManager
-{% highlight java %}
+```
 ...
 mLayoutManager = new GridLayoutManager(this, 2, GridLayoutManager.VERTICAL, false);
 mRecyclerView.setLayoutManager(mLayoutManager);
 dataSet.addAll(Arrays.asList(LETTERS));
 ...
-{% endhighlight %}
+```
 
 GridLayoutManager的构造方法又两种一种是默认的垂直布局的`GridLayoutManager (Context context, int spanCount)`,其中`spanCount`垂直时控制列数,另外一种构造方法是`public GridLayoutManager (Context context, int spanCount, int orientation, boolean reverseLayout)`,同`LinearLayoutManagerd`
