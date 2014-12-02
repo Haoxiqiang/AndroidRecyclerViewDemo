@@ -28,7 +28,7 @@ public class MainActivity extends ActionBarActivity implements OnItemViewHolderC
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
+        mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
         // 使用此设置来提高性能，如果你知道，改变内容不改变RecyclerView的布局大小
         mRecyclerView.setHasFixedSize(true);
