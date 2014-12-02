@@ -8,7 +8,6 @@ RecyclerView 是一个更加灵活的ListView.在google的文档中说,这个控
 * 布局的定位
 * Item项的公共动画,比如增加或者删除的动画
 
-![RecyclerView01](../img/RecyclerView01.png)
 <!-- more -->
 要使用RecyclerView你必须指定一个布局管理器和一个适配器(从RecyclerView.Adapter扩展).布局管理器的作用就是提供一个一个位置信息来确定Item的复用与回收,避免了不必要的错误和执行昂贵的性能浪费(findViewById).
 RecyclerView提供这些内置的布局管理器:
@@ -22,8 +21,6 @@ RecyclerView默认启用添加和删除的动画.要自定义这些动画，扩�
 
 ## RecyclerView的点击事件
 RecyclerView没有类似ListView中的onItemClickListener,原因是原来的onItemClickListener事件容易让人难以理解,现在的RecyclerView其实并没有严格的行或者列的概念,所以我们在这里使用的是每一个View的点击事件.[Why doesn't RecyclerView have onItemClickListener()?](http://stackoverflow.com/questions/24885223/why-doesnt-recyclerview-have-onitemclicklistener)
-
-![RecyclerView02](../img/RecyclerView02.png)
 
 ## LayoutManager
 
