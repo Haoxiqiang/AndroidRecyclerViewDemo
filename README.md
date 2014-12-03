@@ -41,3 +41,6 @@ dataSet.addAll(Arrays.asList(LETTERS));
 ```
 
 GridLayoutManager的构造方法又两种一种是默认的垂直布局的`GridLayoutManager (Context context, int spanCount)`,其中`spanCount`垂直时控制列数,另外一种构造方法是`public GridLayoutManager (Context context, int spanCount, int orientation, boolean reverseLayout)`,同`LinearLayoutManagerd`
+
+### RecyclerView的视差滚动
+参考了[android-parallax-recyclerview](https://github.com/kanytu/android-parallax-recyclerview)
